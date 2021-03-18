@@ -11,6 +11,7 @@
 		172D83AD26035C03003CE4F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D83AC26035C03003CE4F0 /* ViewController.swift */; };
 		172D83AF26035C06003CE4F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172D83AE26035C06003CE4F0 /* Assets.xcassets */; };
 		172D83B226035C06003CE4F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172D83B026035C06003CE4F0 /* Main.storyboard */; };
+		173FDACC260366E3004928C9 /* ExternalWriteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 173FDACB260366E3004928C9 /* ExternalWriteHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,9 @@
 		172D83B126035C06003CE4F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		172D83B326035C06003CE4F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		172D83B426035C06003CE4F0 /* sandbox_fat32_rename.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sandbox_fat32_rename.entitlements; sourceTree = "<group>"; };
+		173FDAC9260366E2004928C9 /* sandbox-fat32-rename-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sandbox-fat32-rename-Bridging-Header.h"; sourceTree = "<group>"; };
+		173FDACA260366E3004928C9 /* ExternalWriteHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExternalWriteHelper.h; sourceTree = "<group>"; };
+		173FDACB260366E3004928C9 /* ExternalWriteHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExternalWriteHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,9 @@
 				172D83B026035C06003CE4F0 /* Main.storyboard */,
 				172D83B326035C06003CE4F0 /* Info.plist */,
 				172D83B426035C06003CE4F0 /* sandbox_fat32_rename.entitlements */,
+				173FDACA260366E3004928C9 /* ExternalWriteHelper.h */,
+				173FDACB260366E3004928C9 /* ExternalWriteHelper.m */,
+				173FDAC9260366E2004928C9 /* sandbox-fat32-rename-Bridging-Header.h */,
 			);
 			path = "sandbox-fat32-rename";
 			sourceTree = "<group>";
@@ -94,6 +101,7 @@
 				TargetAttributes = {
 					172D83A626035C03003CE4F0 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -132,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173FDACC260366E3004928C9 /* ExternalWriteHelper.m in Sources */,
 				172D83AD26035C03003CE4F0 /* ViewController.swift in Sources */,
 				172D83AB26035C03003CE4F0 /* AppDelegate.swift in Sources */,
 			);
@@ -271,6 +280,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "sandbox-fat32-rename/sandbox_fat32_rename.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -283,6 +293,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "de.fheidenreich.sandbox-fat32-rename";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sandbox-fat32-rename/sandbox-fat32-rename-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -292,6 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "sandbox-fat32-rename/sandbox_fat32_rename.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -304,6 +317,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "de.fheidenreich.sandbox-fat32-rename";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sandbox-fat32-rename/sandbox-fat32-rename-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
