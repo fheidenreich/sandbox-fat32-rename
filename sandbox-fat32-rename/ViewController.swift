@@ -12,8 +12,10 @@ class ViewController: NSViewController {
     @IBOutlet weak var folderTextField: NSTextField!
     @IBOutlet weak var selectFolderButton: NSButton!
     @IBOutlet weak var createTestFileButton: NSButton!
+    @IBOutlet weak var fileContentLabel: NSTextField!
     @IBOutlet weak var renameFileButton: NSButton!
     @IBOutlet weak var readFromFileButton: NSButton!
+    @IBOutlet weak var updatedFileContentLabel: NSTextField!
 
     private var bookmarkData: Data?
 
@@ -72,9 +74,11 @@ class ViewController: NSViewController {
             }
 
             let fileURL = folderURL.appendingPathComponent("test.txt")
-            let fileContent = "This is a test"
+            let fileContent = "This is a test."
             try fileContent.write(toFile: fileURL.path, atomically: false, encoding: .utf8)
 
+            let readFileContent = try String(contentsOf: fileURL, encoding: .utf8)
+            fileContentLabel.stringValue = "File content: \(readFileContent)"
             renameFileButton.isEnabled = true
 
         } catch {
@@ -135,6 +139,9 @@ class ViewController: NSViewController {
             // 💥
             let handle = try FileHandle(forReadingFrom: fileURL)
             handle.closeFile()
+
+            let readFileContent = try String(contentsOf: fileURL, encoding: .utf8)
+            updatedFileContentLabel.stringValue = "File content: \(readFileContent)"
 
         } catch {
             NSApplication.shared.presentError(error)

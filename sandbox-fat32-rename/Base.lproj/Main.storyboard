@@ -754,6 +754,14 @@
                                     <action selector="createTestFile:" target="XfG-lQ-9wD" id="aVq-Aj-xUz"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bMB-na-3rS">
+                                <rect key="frame" x="166" y="129" width="4" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" id="Ig5-3F-7Xo">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5No-al-eRV">
                                 <rect key="frame" x="18" y="102" width="444" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="3. Replace file test.txt from a temporary one via rename()" id="AGO-oU-pZ4">
@@ -790,6 +798,14 @@
                                     <action selector="readFromTestFile:" target="XfG-lQ-9wD" id="7bg-oz-0Un"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ATA-2w-hoz">
+                                <rect key="frame" x="166" y="23" width="4" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" id="a01-sC-Kto">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="5No-al-eRV" secondAttribute="trailing" constant="20" symbolic="YES" id="0cm-2S-ojG"/>
@@ -800,10 +816,14 @@
                             <constraint firstItem="abG-Jf-6XQ" firstAttribute="top" secondItem="zUe-KL-I0G" secondAttribute="bottom" constant="8" symbolic="YES" id="9Hh-9f-gUc"/>
                             <constraint firstAttribute="trailing" secondItem="Qik-8D-iKI" secondAttribute="trailing" constant="20" symbolic="YES" id="A6r-BI-dSO"/>
                             <constraint firstAttribute="trailing" secondItem="mmQ-Id-rHl" secondAttribute="trailing" constant="20" symbolic="YES" id="ATP-Sd-OC4"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ATA-2w-hoz" secondAttribute="trailing" constant="20" symbolic="YES" id="AzG-1k-TaV"/>
                             <constraint firstItem="mmQ-Id-rHl" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="BTS-hU-zo6"/>
+                            <constraint firstItem="ATA-2w-hoz" firstAttribute="leading" secondItem="P7i-ze-rgZ" secondAttribute="trailing" constant="8" symbolic="YES" id="DYH-21-lL6"/>
                             <constraint firstItem="P7i-ze-rgZ" firstAttribute="top" secondItem="Qik-8D-iKI" secondAttribute="bottom" constant="8" symbolic="YES" id="Dtd-PK-Oef"/>
                             <constraint firstItem="P7i-ze-rgZ" firstAttribute="width" secondItem="w6Z-th-Aq2" secondAttribute="width" id="G5E-uc-X8K"/>
                             <constraint firstItem="P7i-ze-rgZ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="IKS-QY-D6t"/>
+                            <constraint firstItem="ATA-2w-hoz" firstAttribute="centerY" secondItem="P7i-ze-rgZ" secondAttribute="centerY" id="IKS-ce-sJy"/>
+                            <constraint firstItem="bMB-na-3rS" firstAttribute="centerY" secondItem="w6Z-th-Aq2" secondAttribute="centerY" id="Nxq-SF-BDx"/>
                             <constraint firstItem="g5c-7E-yrc" firstAttribute="width" secondItem="w6Z-th-Aq2" secondAttribute="width" id="PYa-Sv-kG0"/>
                             <constraint firstItem="abG-Jf-6XQ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="TPV-b0-xc2"/>
                             <constraint firstItem="g5c-7E-yrc" firstAttribute="top" secondItem="5No-al-eRV" secondAttribute="bottom" constant="8" symbolic="YES" id="W49-Mh-Baz"/>
@@ -814,10 +834,12 @@
                             <constraint firstItem="zUe-KL-I0G" firstAttribute="top" secondItem="mmQ-Id-rHl" secondAttribute="bottom" constant="8" symbolic="YES" id="cNW-xj-vTp"/>
                             <constraint firstItem="Qik-8D-iKI" firstAttribute="top" secondItem="g5c-7E-yrc" secondAttribute="bottom" constant="8" symbolic="YES" id="dFQ-Jl-46C"/>
                             <constraint firstItem="5No-al-eRV" firstAttribute="top" secondItem="w6Z-th-Aq2" secondAttribute="bottom" constant="8" symbolic="YES" id="e6I-c8-JgY"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bMB-na-3rS" secondAttribute="trailing" constant="20" symbolic="YES" id="g9U-Tg-rHP"/>
                             <constraint firstItem="mmQ-Id-rHl" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="jLf-Lo-5k7"/>
                             <constraint firstItem="g5c-7E-yrc" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="lJp-Ld-AwT"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="w6Z-th-Aq2" secondAttribute="trailing" constant="20" symbolic="YES" id="lZI-ev-4j0"/>
                             <constraint firstItem="w6Z-th-Aq2" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="llr-MJ-1IV"/>
+                            <constraint firstItem="bMB-na-3rS" firstAttribute="leading" secondItem="w6Z-th-Aq2" secondAttribute="trailing" constant="8" symbolic="YES" id="nF3-Zc-qak"/>
                             <constraint firstItem="cea-EW-OZj" firstAttribute="centerY" secondItem="zUe-KL-I0G" secondAttribute="centerY" id="vRk-Yv-TfU"/>
                             <constraint firstItem="5No-al-eRV" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="yJR-gZ-bN5"/>
                             <constraint firstItem="w6Z-th-Aq2" firstAttribute="top" secondItem="abG-Jf-6XQ" secondAttribute="bottom" constant="8" symbolic="YES" id="zcM-Ke-FHQ"/>
@@ -825,10 +847,12 @@
                     </view>
                     <connections>
                         <outlet property="createTestFileButton" destination="w6Z-th-Aq2" id="J5z-mx-r95"/>
+                        <outlet property="fileContentLabel" destination="bMB-na-3rS" id="sM4-ie-h0f"/>
                         <outlet property="folderTextField" destination="zUe-KL-I0G" id="uaC-hp-4fg"/>
                         <outlet property="readFromFileButton" destination="P7i-ze-rgZ" id="bbj-Gs-Tu3"/>
                         <outlet property="renameFileButton" destination="g5c-7E-yrc" id="P4a-G4-npe"/>
                         <outlet property="selectFolderButton" destination="cea-EW-OZj" id="WyD-43-MpZ"/>
+                        <outlet property="updatedFileContentLabel" destination="ATA-2w-hoz" id="D1V-xb-8qW"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
