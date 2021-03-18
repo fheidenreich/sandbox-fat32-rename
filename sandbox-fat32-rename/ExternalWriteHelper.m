@@ -11,7 +11,7 @@
 
 - (bool)write:(NSString*)fileName with:(NSString *)temporaryFileName
 {
-    const int fd = open([temporaryFileName UTF8String], O_CREAT | O_RDWR);
+    const int fd = open([temporaryFileName UTF8String], O_CREAT | O_RDWR, S_IRWXU);
     if (fd == -1) {
         return false;
     }
